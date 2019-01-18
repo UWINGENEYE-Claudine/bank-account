@@ -1,0 +1,38 @@
+.form-group {
+    background-color: blue;
+  }
+  
+  .make-deposit {
+    background-color: blue;
+  }
+  
+  .new_account {
+    text-align: center;
+  }
+  
+  .deposits_withdrawls {
+    
+  }
+  
+  .deposits_withdrawls > div {
+    padding: 1em;
+    margin:1em;
+    height: minmax(100px, auto);
+  }
+  
+  .account_balance_display {
+    grid-column: 1/2;
+    grid-row:4;
+    text-align:center;
+    border-width:5px;
+    border-radius:35%;
+    border-style:solid;
+    border-color:#000;
+    padding:.5em;
+    margin:2em;
+  }
+  
+  h4 {
+    text-align:center;
+  }
+  
