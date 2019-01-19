@@ -14,26 +14,27 @@
     <div class="column-md-4">
        <div class="row">
               <div class="wrapper">
-                    <div class="banner">
                       <h2>Bank Account</h2>
-                    </div>
-              
                     <div class="new_account">
-                      <h4>Open a new Account</h4>
+                      <h4>Open Account</h4>
                       <form id="submit_new_account">
                         <div class="form-group">
                           <label for="user_name">Your name</label>
                           <input type="text" id="user_name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                          <label for="user_ID">ID</label>
-                          <input type="text" id="user_name" class="form-control" required>
+                          <label for="user_password">Password</label>
+                          <input type="text" id="user_password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="user_id">ID</label>
+                          <input type="text" id="user_id" class="form-control" required>
                         </div>  
                         <div class="form-group">
                           <label for="initial_deposit">Initial deposit</label>
                           <input type="text" id="initial_deposit" class="form-control" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Open Account</button>
+                        <button type="submit" class="first">Open Account</button>
                       </form>
                     </div>
               
@@ -45,7 +46,7 @@
                             <label for="current_deposit">Deposit amount</label>
                             <input type="text" class="form-control" id ="current_deposit" required>
                           </div>
-                          <button type="submit" class="btn btn-success">Deposit</button>
+                          <button type="submit" class="add">Deposit</button>
                         </form>
                       </div>
                       <div id="withdrawls">
@@ -55,12 +56,12 @@
                           <label for="current_withdrawl">Withdrawl amount</label>
                           <input type="text" class="form-control" id="current_withdrawl" required>
                         </div>
-                        <button type="submit" class="btn btn-danger">Withdraw</button>
+                        <button type="submit" class="remove">Withdraw</button>
                       </form>
                       </div>
                     </div>
                     <div class="account_balance_display">
-                      <h4>Balance:</h4>
+                      <h3>Balance:</h3>
                       <p><span class="balance_here"></span></p>
                     </div>   
         </form> 
