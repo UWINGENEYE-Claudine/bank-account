@@ -6,7 +6,17 @@ function BankAccount(name, password, ID, initialDeposit, balance) {
     this.firstDeposit = initialDeposit;
     this.balance = balance;
   }
+  //method for create account
   
+  BankAccount.prototype.userPassword = function(password){
+    if(userPassword = correct)
+    return password
+  }
+  BankAccount.prototype.userId = function(id){
+    if(id = correct)
+    return id
+  }
+
   //method for adding a deposit.
   BankAccount.prototype.makeDeposit = function(deposit) {
     this.balance += deposit;
@@ -16,8 +26,6 @@ function BankAccount(name, password, ID, initialDeposit, balance) {
     this.balance -= withdrawl;
   }
   
-  
-  
   //User interface logic
   
   $(document).ready(function(){
@@ -25,7 +33,7 @@ function BankAccount(name, password, ID, initialDeposit, balance) {
       event.preventDefault();
        name = $('#user_name').val();
        password = $('#user-password').val();
-       id = $('#user-id').val();
+       id = parseInt($('#user-id').val());
        initialDeposit = parseInt($('#initial_deposit').val());
        newBalance = initialDeposit;
        userAccount = new BankAccount(name, initialDeposit, newBalance);
