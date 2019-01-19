@@ -1,6 +1,8 @@
 
-function BankAccount(name, initialDeposit, balance) {
+function BankAccount(name, password, ID, initialDeposit, balance) {
     this.userName = name;
+    this.userPassword=password;
+    this.userId=id;
     this.firstDeposit = initialDeposit;
     this.balance = balance;
   }
@@ -22,6 +24,8 @@ function BankAccount(name, initialDeposit, balance) {
     $('form#submit_new_account').submit(function(event) {
       event.preventDefault();
        name = $('#user_name').val();
+       password = $('#user-password').val();
+       id = $('#user-id').val();
        initialDeposit = parseInt($('#initial_deposit').val());
        newBalance = initialDeposit;
        userAccount = new BankAccount(name, initialDeposit, newBalance);
@@ -34,7 +38,7 @@ function BankAccount(name, initialDeposit, balance) {
            deposit = parseInt($('#current_deposit').val());
           userAccount.makeDeposit(deposit);
           $('.balance_here').text(`${userAccount.balance}`);
-          $('#make_deposit').text('your deposit succesed');
+          $('#make_deposit').trigger('reset');
         });
   
         $('#make_withdrawl').submit(function(event) {
