@@ -1,9 +1,22 @@
-.form-group {
-    background-color: blue;
-  }
+.container{
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYP3L3sBe9-xmmF5pIA1RkdBxTnaPZbpScjE7lS-F2stitg3HREw');
+  background-repeat: no-repeat;
+  background-size: cover;
   
+}
+.submit-new-ccount {
+    background-color:gray;
+    margin-right: 400px;
+    margin-left: 400px;
+    font-size: 25px;
+  }
+  h1{
+    text-align: center;
+  }
   .make-deposit {
-    background-color: blue;
+    background-color: gray;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   
   .new_account {
@@ -11,28 +24,19 @@
   }
   
   .deposits_withdrawls {
-    
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  #make-deposits{
+    background-color:gray;
+    font-size:15px;
   }
   
-  .deposits_withdrawls > div {
-    padding: 1em;
-    margin:1em;
-    height: minmax(100px, auto);
-  }
   
-  .account_balance_display {
-    grid-column: 1/2;
-    grid-row:4;
+  h3 {
     text-align:center;
-    border-width:5px;
-    border-radius:35%;
-    border-style:solid;
-    border-color:#000;
-    padding:.5em;
-    margin:2em;
-  }
-  
-  h4 {
-    text-align:center;
+    color:green;
+    font-size: 40px;
   }
   
